@@ -57,7 +57,7 @@ export default function BudiClipPortfolio() {
 
           <div className="relative z-10 flex flex-col items-center text-center max-w-4xl">
             <img
-              src="/Budi Clip Logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="Budi Clip Logo"
               className="w-36 h-36 rounded-full shadow-2xl mb-8"
             />
@@ -116,7 +116,6 @@ export default function BudiClipPortfolio() {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold">{video.title}</h3>
-                <p className="text-zinc-400 mt-2">{video.category}</p>
               </div>
             ))}
           </div>
