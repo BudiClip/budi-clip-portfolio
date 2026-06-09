@@ -8,39 +8,46 @@ export default function BudiClipPortfolio() {
       title: "Reaction + Subtitle Edit",
       id: "7602527551772232981",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oQKps1qfAAAsARMHgEFCgmcDLfRuxoZEBECCBI~tplv-tiktokx-origin.image?dr=14575&x-expires=1780758000&x-signature=CK4SNTaXrIx0FCGpTItec0yLUmI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oQKps1qfAAAsARMHgEFCgmcDLfRuxoZEBECCBI~tplv-tiktokx-origin.image?dr=14575&x-expires=1780977600&x-signature=OpIBB5sn1eIZg7ip9eQode9ZFUs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7629587202095189266",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUch80vbiTmGAisDzAUEAwgvMhAeBmByBIIPKQ~tplv-tiktokx-origin.image?dr=14575&x-expires=1780758000&x-signature=VMi7IR0xGWhtkbBMqXyoJxj9tY4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUch80vbiTmGAisDzAUEAwgvMhAeBmByBIIPKQ~tplv-tiktokx-origin.image?dr=14575&x-expires=1780981200&x-signature=WB3SqbQUF1umOcfzMjDA4vifA9c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=sg1",
     },
     {
       title: "Reaction + Subtitle Edit",
       id: "7616693182348152085",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUcsBf3SEiNUIi7T4ApgiCJzEuRfAAxYCBXAqT~tplv-tiktokx-origin.image?dr=14575&x-expires=1780758000&x-signature=3JAjV64jOkxcbTZlnHvZ%2Ba1AcCM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUcsBf3SEiNUIi7T4ApgiCJzEuRfAAxYCBXAqT~tplv-tiktokx-origin.image?dr=14575&x-expires=1780981200&x-signature=uGbK%2F7Or2y7go9%2Bv4O4jRdbPb8c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=sg1",
     },
     {
       title: "Highlight Stream Moment",
       id: "7644125908856556821",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUy7jFuEEQAIgCFHWqfQwAJARAsIqDcOBAeBCl~tplv-tiktokx-dmt-logom:tos-alisg-i-0068/o4AVAAy5jnPEBhKiVyAVMYYZBAIaAiwkGBRAE.image?dr=14573&x-expires=1780758000&x-signature=QVa5sWewiZtDNA%2BVByXY%2BPNeHbQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUy7jFuEEQAIgCFHWqfQwAJARAsIqDcOBAeBCl~tplv-tiktokx-dmt-logom:tos-alisg-i-0068/o4AVAAy5jnPEBhKiVyAVMYYZBAIaAiwkGBRAE.image?dr=14573&x-expires=1780981200&x-signature=3cZXvx5AIqfNkmujpJXfwwaZ%2BRE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=sg1",
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7645188848896593172",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oMESZPAlYkiIAzuYnA9ioigr6oBaghAnAAqAK~tplv-tiktokx-origin.image?dr=14575&x-expires=1780758000&x-signature=yT9VOenGAZDNRtFtTEYP%2F%2F3VlbQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oMESZPAlYkiIAzuYnA9ioigr6oBaghAnAAqAK~tplv-tiktokx-origin.image?dr=14575&x-expires=1780977600&x-signature=yKRCJtx%2Fya0A%2B0R9mjwFjJInoHU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7646465610372730132",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o8ObAGdIsAL2DpxeIAc734U3ZAjvOAeVIQfEAF~tplv-tiktokx-origin.image?dr=14575&x-expires=1780761600&x-signature=Lv80qgsVG%2FN7niO5FuM72vxNbSQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/o8ObAGdIsAL2DpxeIAc734U3ZAjvOAeVIQfEAF~tplv-tiktokx-origin.image?dr=14575&x-expires=1780981200&x-signature=%2BO1OWvrrNLlvBx1SR7LY4tO5bZU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=sg1",
 
     },
+    {
+      title: "Stream Highlight Shorts",
+      id: "7648252893190950165",
+      thumbnail:
+      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/ooUAIlOIACWgYABsAAwiiEYREfDx1CiBAAb8kA~tplv-tiktokx-origin.image?dr=14575&x-expires=1781060400&x-signature=cBYnR9Ls%2B3vflJqoKYKzt9C5dc8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+    },
+    
   ];
 
   const youtubeVideos = [
