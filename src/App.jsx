@@ -115,7 +115,7 @@ export default function BudiClipPortfolio() {
             </h1>
 
             <p className="mt-6 text-zinc-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-              Short-form gaming editor focused on high-retention cuts, strong pacing,
+              Video gaming editor focused on high-retention cuts, strong pacing,
               and content engineered to keep viewers watching.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
@@ -268,6 +268,7 @@ export default function BudiClipPortfolio() {
               <div className="p-6 bg-zinc-900 rounded-2xl">Short-form Editing</div>
               <div className="p-6 bg-zinc-900 rounded-2xl">Gaming Highlights</div>
               <div className="p-6 bg-zinc-900 rounded-2xl">TikTok / Reels Optimization</div>
+              <div className="p-6 bg-zinc-900 rounded-2xl">Long-form Editing</div>
             </div>
           </div>
         </section>
