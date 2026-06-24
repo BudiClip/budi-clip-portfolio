@@ -7,59 +7,48 @@ export default function BudiClipPortfolio() {
     {
       title: "Reaction + Subtitle Edit",
       id: "7602527551772232981",
-      thumbnail:
-      "/thumbnails/tiktok-thumbnail_1.png",
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_1.png`,
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7629587202095189266",
-      thumbnail:
-      "/thumbnails/tiktok-thumbnail_2.png",
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_2.png`,
     },
     {
       title: "Reaction + Subtitle Edit",
       id: "7616693182348152085",
-      thumbnail:
-      "/thumbnails/tiktok-thumbnail_3.png",
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_3.png`,
     },
     {
       title: "Highlight Stream Moment",
       id: "7644125908856556821",
-      thumbnail:
-      "/thumbnails/tiktok-thumbnail_4.png",
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_4.png`,
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7645188848896593172",
-      thumbnail:
-      "/thumbnails/tiktok-thumbnail_5.png",
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_5.png`,
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7646465610372730132",
-      thumbnail:
-     "/thumbnails/tiktok-thumbnail_6.png",
-
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_6.png`,
     },
     {
       title: "Stream Highlight Shorts",
       id: "7648252893190950165",
-      thumbnail:
-     "/thumbnails/tiktok-thumbnail_7.png",
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_7.png`,
     },
     {
       title: "Talking Head",
       id: "7652721216872090898",
-      thumbnail:
-     "/thumbnails/tiktok-thumbnail_8.png",
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_8.png`,
     },
     {
       title: "Talking Head",
       id: "7651231835208436999",
-      thumbnail:
-     "/thumbnails/tiktok-thumbnail_9.png",
+      thumbnail: `${import.meta.env.BASE_URL}thumbnails/tiktok-thumbnail_9.png`,
     },
-    
   ];
 
   const youtubeVideos = [
@@ -77,7 +66,6 @@ export default function BudiClipPortfolio() {
       url: "https://youtu.be/sthTQBiU8gc",
       duration: "18:22",
     },
-
     {
       title: "Roblox Long-Form Edit",
       thumbnail: `https://img.youtube.com/vi/TuaLd4koFJI/maxresdefault.jpg`,
@@ -178,8 +166,8 @@ export default function BudiClipPortfolio() {
 
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <div className="bg-red-600 rounded-xl px-4 py-2 text-white text-3xl shadow-xl">
-                    ▶
-                  </div>
+                      ▶
+                    </div>
                   </div>
                 </div>
 
@@ -343,7 +331,6 @@ export default function BudiClipPortfolio() {
             </a>
           </div>
         </section>
-
 
         <footer className="px-6 py-16 border-t border-zinc-900 text-center text-zinc-500">
           <p>© 2026 Budi Clip — Built for creators who want attention.</p>
