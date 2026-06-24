@@ -147,7 +147,7 @@ export default function BudiClipPortfolio() {
 
               <div className="text-center">
                 <h3 className="text-3xl font-bold text-purple-400">Gaming</h3>
-                <p className="text-zinc-400 mt-2">Short-Form Focus</p>
+                <p className="text-zinc-400 mt-2">High-Retention Focus</p>
               </div>
             </div>
 
