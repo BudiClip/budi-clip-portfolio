@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export default function BudiClipPortfolio() {
   const [openVideo, setOpenVideo] = useState(null);
+  // State for active portfolio filter
+  const [activeCategory, setActiveCategory] = useState("all"); 
 
   const tiktokVideos = [
     {
@@ -53,11 +55,17 @@ export default function BudiClipPortfolio() {
 
   const youtubeVideos = [
     {
-      title: "Funny Gaming Short",
+      title: "Funny Gaming Short (indonesian)",
       id: "2iD40AjaVw4",
       thumbnail: "https://img.youtube.com/vi/2iD40AjaVw4/maxresdefault.jpg",
     },
+    {
+      title: "Funny Gaming Short (English)",
+      id: "5FFoKb-4_Pw",
+      thumbnail: "https://img.youtube.com/vi/5FFoKb-4_Pw/maxresdefault.jpg",
+    },
   ];
+  
 
   const longFormVideos = [
     {
@@ -72,6 +80,14 @@ export default function BudiClipPortfolio() {
       url: "https://www.youtube.com/watch?v=TuaLd4koFJI",
       duration: "19:02",
     },
+  ];
+
+  // International Category Menu Configuration
+  const categories = [
+    { id: "all", label: "All Work" },
+    { id: "tiktok", label: "TikTok Clips" },
+    { id: "shorts", label: "YouTube Shorts" },
+    { id: "longform", label: "Long Form" },
   ];
 
   return (
@@ -146,119 +162,147 @@ export default function BudiClipPortfolio() {
           </div>
         </section>
 
-        {/* Portfolio */}
-        <section id="work" className="px-6 py-24 max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12">Featured TikTok Work</h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {tiktokVideos.map((video, index) => (
-              <div
-                key={index}
-                onClick={() => setOpenVideo(video.id)}
-                className="bg-zinc-900 rounded-3xl p-6 border border-zinc-800 hover:border-purple-500 transition cursor-pointer"
+        {/* Category Filter Menu Bar */}
+        <section id="work" className="pt-24 px-6 max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8">Featured Projects</h2>
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`px-5 py-2.5 rounded-xl font-medium transition duration-200 ${
+                  activeCategory === cat.id
+                    ? "bg-purple-500 text-white shadow-lg shadow-purple-500/30"
+                    : "bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800"
+                }`}
               >
-                <div className="relative aspect-[9/16] rounded-2xl overflow-hidden mb-4 group">
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
-                  />
-
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                    <div className="bg-red-600 rounded-xl px-4 py-2 text-white text-3xl shadow-xl">
-                      ▶
-                    </div>
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-semibold">
-                  {video.title}
-                </h3>
-              </div>
+                {cat.label}
+              </button>
             ))}
           </div>
         </section>
+
+        {/* Filtered Portfolio Rendering */}
+
+        {/* Portfolio - TikTok */}
+        {(activeCategory === "all" || activeCategory === "tiktok") && (
+          <section className="px-6 pb-24 max-w-6xl mx-auto">
+            <h2 className="text-2xl font-bold mb-8 text-zinc-400">Featured TikTok Work</h2>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {tiktokVideos.map((video, index) => (
+                <div
+                  key={index}
+                  onClick={() => setOpenVideo(video.id)}
+                  className="bg-zinc-900 rounded-3xl p-6 border border-zinc-800 hover:border-purple-500 transition cursor-pointer"
+                >
+                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden mb-4 group">
+                    <img
+                      src={video.thumbnail}
+                      alt={video.title}
+                      className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
+                    />
+
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                      <div className="bg-red-600 rounded-xl px-4 py-2 text-white text-3xl shadow-xl">
+                        ▶
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 className="text-xl font-semibold">
+                    {video.title}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* YouTube Shorts */}
-        <section className="px-6 py-24 border-t border-zinc-900 max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12">
-            Featured YouTube Shorts
-          </h2>
+        {(activeCategory === "all" || activeCategory === "shorts") && (
+          <section className={`px-6 pb-24 max-w-6xl mx-auto ${activeCategory === 'all' ? 'border-t border-zinc-900 pt-24' : ''}`}>
+            <h2 className="text-2xl font-bold mb-8 text-zinc-400">
+              Featured YouTube Shorts
+            </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {youtubeVideos.map((video, index) => (
-              <a
-                key={index}
-                href={`https://youtube.com/watch?v=${video.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-zinc-900 rounded-3xl p-6 border border-zinc-800 hover:border-red-500 transition"
-              >
-                <div className="relative aspect-[9/16] rounded-2xl overflow-hidden mb-4">
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover"
-                  />
-
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                    <div className="bg-red-600 rounded-xl px-4 py-2 text-white text-3xl">
-                      ▶
-                    </div>
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-semibold">
-                  {video.title}
-                </h3>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        {/* Long Form Projects */}
-        <section className="px-6 py-24 border-t border-zinc-900 max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12">
-            Featured Long Form Projects
-          </h2>
-
-          <div className="space-y-6">
-            {longFormVideos.map((video, index) => (
-              <a
-                key={index}
-                href={video.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-purple-500 transition"
-              >
-                <div className="md:flex">
-                  <div className="md:w-[400px] relative">
+            <div className="grid md:grid-cols-3 gap-8">
+              {youtubeVideos.map((video, index) => (
+                <a
+                  key={index}
+                  href={`https://youtube.com/watch?v=${video.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-zinc-900 rounded-3xl p-6 border border-zinc-800 hover:border-red-500 transition"
+                >
+                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden mb-4">
                     <img
                       src={video.thumbnail}
                       alt={video.title}
                       className="w-full h-full object-cover"
                     />
 
-                    <div className="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-sm">
-                      {video.duration}
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                      <div className="bg-red-600 rounded-xl px-4 py-2 text-white text-3xl">
+                        ▶
+                      </div>
                     </div>
                   </div>
 
-                  <div className="p-6 flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold mb-2">
-                      {video.title}
-                    </h3>
+                  <h3 className="text-xl font-semibold">
+                    {video.title}
+                  </h3>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
-                    <p className="text-zinc-400">
-                      Long-form gaming content edited for engagement,
-                      pacing, and viewer retention.
-                    </p>
+        {/* Long Form Projects */}
+        {(activeCategory === "all" || activeCategory === "longform") && (
+          <section className={`px-6 pb-24 max-w-6xl mx-auto ${activeCategory === 'all' ? 'border-t border-zinc-900 pt-24' : ''}`}>
+            <h2 className="text-2xl font-bold mb-8 text-zinc-400">
+              Featured Long Form Projects
+            </h2>
+
+            <div className="space-y-6">
+              {longFormVideos.map((video, index) => (
+                <a
+                  key={index}
+                  href={video.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-purple-500 transition"
+                >
+                  <div className="md:flex">
+                    <div className="md:w-[400px] relative">
+                      <img
+                        src={video.thumbnail}
+                        alt={video.title}
+                        className="w-full h-full object-cover"
+                      />
+
+                      <div className="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-sm">
+                        {video.duration}
+                      </div>
+                    </div>
+
+                    <div className="p-6 flex flex-col justify-center">
+                      <h3 className="text-2xl font-bold mb-2">
+                        {video.title}
+                      </h3>
+
+                      <p className="text-zinc-400">
+                        Long-form gaming content edited for engagement,
+                        pacing, and viewer retention.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Services */}
         <section className="px-6 py-24 border-t border-zinc-900">
@@ -307,8 +351,9 @@ export default function BudiClipPortfolio() {
         >
           <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
             Need a gaming editor for TikTok, Reels, or Shorts?
-
+            <br /><br />
             Let's work together.
+            <br />
             Fast delivery. Clean subtitles. High-retention pacing.
           </p>
 
