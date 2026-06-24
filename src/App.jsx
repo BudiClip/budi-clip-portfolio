@@ -8,44 +8,56 @@ export default function BudiClipPortfolio() {
       title: "Reaction + Subtitle Edit",
       id: "7602527551772232981",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oQKps1qfAAAsARMHgEFCgmcDLfRuxoZEBECCBI~tplv-tiktokx-origin.image?dr=14575&x-expires=1781254800&x-signature=6d%2BeXZr%2F4eM9eukPPQPevejIv5c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "/thumbnails/tiktok-thumbnail_1.png",
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7629587202095189266",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUch80vbiTmGAisDzAUEAwgvMhAeBmByBIIPKQ~tplv-tiktokx-origin.image?dr=14575&x-expires=1781254800&x-signature=MN4buIGZtEpTjZSlkkc6UKEOKa0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "/thumbnails/tiktok-thumbnail_2.png",
     },
     {
       title: "Reaction + Subtitle Edit",
       id: "7616693182348152085",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUcsBf3SEiNUIi7T4ApgiCJzEuRfAAxYCBXAqT~tplv-tiktokx-origin.image?dr=14575&x-expires=1781254800&x-signature=NVhbFerC7SI48EPOiKNUZ%2B%2Fwyno%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "/thumbnails/tiktok-thumbnail_3.png",
     },
     {
       title: "Highlight Stream Moment",
       id: "7644125908856556821",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oUy7jFuEEQAIgCFHWqfQwAJARAsIqDcOBAeBCl~tplv-tiktokx-dmt-logom:tos-alisg-i-0068/o4AVAAy5jnPEBhKiVyAVMYYZBAIaAiwkGBRAE.image?dr=14573&x-expires=1781254800&x-signature=UeeIlKErog65fRAANEALYOpw0qg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "/thumbnails/tiktok-thumbnail_4.png",
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7645188848896593172",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oMESZPAlYkiIAzuYnA9ioigr6oBaghAnAAqAK~tplv-tiktokx-origin.image?dr=14575&x-expires=1781254800&x-signature=Vo3NVbknw7qZqb4cznZvZzdMBFk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "/thumbnails/tiktok-thumbnail_5.png",
     },
     {
       title: "Funny Stream Moment Edit",
       id: "7646465610372730132",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o8ObAGdIsAL2DpxeIAc734U3ZAjvOAeVIQfEAF~tplv-tiktokx-origin.image?dr=14575&x-expires=1781254800&x-signature=PRBnodNogRE0VyR6VuwLQ1DrKhM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+     "/thumbnails/tiktok-thumbnail_6.png",
 
     },
     {
       title: "Stream Highlight Shorts",
       id: "7648252893190950165",
       thumbnail:
-      "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/ooUAIlOIACWgYABsAAwiiEYREfDx1CiBAAb8kA~tplv-tiktokx-origin.image?dr=14575&x-expires=1781254800&x-signature=tmxSLq%2BBlNAGxgswGXm93dsh3Cs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+     "/thumbnails/tiktok-thumbnail_7.png",
+    },
+    {
+      title: "Talking Head",
+      id: "7652721216872090898",
+      thumbnail:
+     "/thumbnails/tiktok-thumbnail_8.png",
+    },
+    {
+      title: "Talking Head",
+      id: "7651231835208436999",
+      thumbnail:
+     "/thumbnails/tiktok-thumbnail_9.png",
     },
     
   ];
