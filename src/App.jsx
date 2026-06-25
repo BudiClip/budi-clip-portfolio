@@ -2,8 +2,10 @@ import { useState } from "react";
 
 export default function BudiClipPortfolio() {
   const [openVideo, setOpenVideo] = useState(null);
-  // State for active portfolio filter
-  const [activeCategory, setActiveCategory] = useState("all"); 
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  // GANTI INI DENGAN EMAIL BISNIS LO
+  const contactEmail = "satrioimron284@gmail.com";
 
   const tiktokVideos = [
     {
@@ -55,45 +57,51 @@ export default function BudiClipPortfolio() {
 
   const youtubeVideos = [
     {
-      title: "Funny Gaming Short (indonesian)",
+      title: "Funny Gaming Short - Indonesian",
       id: "2iD40AjaVw4",
       thumbnail: "https://img.youtube.com/vi/2iD40AjaVw4/maxresdefault.jpg",
+      details: "Short-form gaming edit with subtitles, cuts, memes, and pacing.",
     },
     {
-      title: "Funny Gaming Short (English)",
+      title: "Funny Gaming Short - English",
       id: "5FFoKb-4_Pw",
       thumbnail: "https://img.youtube.com/vi/5FFoKb-4_Pw/maxresdefault.jpg",
+      details: "English gaming short edited for fast pacing and viewer retention.",
     },
   ];
-  
 
   const longFormVideos = [
     {
-      title: "Roblox Long-Form Edit",
-      thumbnail: `https://img.youtube.com/vi/sthTQBiU8gc/maxresdefault.jpg`,
+      title: "Roblox Long-Form Gaming Video",
+      thumbnail: "https://img.youtube.com/vi/sthTQBiU8gc/maxresdefault.jpg",
       url: "https://youtu.be/sthTQBiU8gc",
       duration: "18:22",
+      type: "Long-form YouTube video",
+      details:
+        "Edited for pacing, storytelling, subtitles, memes, SFX, and viewer retention.",
     },
     {
-      title: "Roblox Long-Form Edit",
-      thumbnail: `https://img.youtube.com/vi/TuaLd4koFJI/maxresdefault.jpg`,
+      title: "Roblox Challenge / Story-Driven Edit",
+      thumbnail: "https://img.youtube.com/vi/TuaLd4koFJI/maxresdefault.jpg",
       url: "https://www.youtube.com/watch?v=TuaLd4koFJI",
       duration: "19:02",
+      type: "Long-form YouTube video",
+      details:
+        "Structured gameplay footage into a cleaner and more engaging YouTube video.",
     },
   ];
 
-  // International Category Menu Configuration
   const categories = [
     { id: "all", label: "All Work" },
-    { id: "tiktok", label: "TikTok Clips" },
-    { id: "shorts", label: "YouTube Shorts" },
-    { id: "longform", label: "Long Form" },
+    { id: "longform", label: "Long-Form Videos" },
+    { id: "shorts", label: "Short-Form Clips" },
+    { id: "tiktok", label: "TikTok / Reels" },
   ];
 
   return (
     <>
       {openVideo && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
           <div className="relative w-[350px] md:w-[400px] h-[600px] md:h-[700px] bg-black rounded-2xl overflow-hidden">
             <iframe
               src={`https://www.tiktok.com/embed/v2/${openVideo}`}
@@ -131,9 +139,12 @@ export default function BudiClipPortfolio() {
             </h1>
 
             <p className="mt-6 text-zinc-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-              Video gaming editor focused on high-retention cuts, strong pacing,
-              and content engineered to keep viewers watching.
+              Gaming video editor for YouTube creators — turning raw gameplay
+              and stream footage into engaging long-form videos, stream
+              highlights, and short-form clips with strong pacing, clean
+              subtitles, memes, SFX, and retention-focused cuts.
             </p>
+
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
               <div className="text-center">
                 <h3 className="text-3xl font-bold text-purple-400">1+</h3>
@@ -141,30 +152,45 @@ export default function BudiClipPortfolio() {
               </div>
 
               <div className="text-center">
-                <h3 className="text-3xl font-bold text-purple-400">&lt;12h</h3>
-                <p className="text-zinc-400 mt-2">Fast Delivery</p>
+                <h3 className="text-3xl font-bold text-purple-400">
+                  Long + Short
+                </h3>
+                <p className="text-zinc-400 mt-2">YouTube Editing</p>
               </div>
 
               <div className="text-center">
                 <h3 className="text-3xl font-bold text-purple-400">Gaming</h3>
-                <p className="text-zinc-400 mt-2">High-Retention Focus</p>
+                <p className="text-zinc-400 mt-2">Retention-Focused</p>
               </div>
             </div>
 
-            <div className="mt-10 flex gap-4">
-              <a href="#work" className="px-6 py-3 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition inline-block">
+            <div className="mt-10 flex gap-4 flex-wrap justify-center">
+              <a
+                href="#work"
+                className="px-6 py-3 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition inline-block"
+              >
                 View Work
               </a>
-              <a href="#contact" className="px-6 py-3 rounded-2xl border border-zinc-700 hover:border-purple-400 transition inline-block">
+
+              <a
+                href="#contact"
+                className="px-6 py-3 rounded-2xl border border-zinc-700 hover:border-purple-400 transition inline-block"
+              >
                 Contact
               </a>
             </div>
           </div>
         </section>
 
-        {/* Category Filter Menu Bar */}
+        {/* Category Filter */}
         <section id="work" className="pt-24 px-6 max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">Featured Projects</h2>
+          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+
+          <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">
+            A selection of long-form gaming videos, stream highlights, and
+            short-form clips edited for pacing, retention, and engagement.
+          </p>
+
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((cat) => (
               <button
@@ -182,38 +208,50 @@ export default function BudiClipPortfolio() {
           </div>
         </section>
 
-        {/* Filtered Portfolio Rendering */}
-
-        {/* Portfolio - TikTok */}
-        {(activeCategory === "all" || activeCategory === "tiktok") && (
+        {/* Long Form Projects */}
+        {(activeCategory === "all" || activeCategory === "longform") && (
           <section className="px-6 pb-24 max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-zinc-400">Featured TikTok Work</h2>
+            <h2 className="text-2xl font-bold mb-8 text-zinc-400">
+              Featured Long-Form Projects
+            </h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {tiktokVideos.map((video, index) => (
-                <div
+            <div className="space-y-6">
+              {longFormVideos.map((video, index) => (
+                <a
                   key={index}
-                  onClick={() => setOpenVideo(video.id)}
-                  className="bg-zinc-900 rounded-3xl p-6 border border-zinc-800 hover:border-purple-500 transition cursor-pointer"
+                  href={video.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-purple-500 transition"
                 >
-                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden mb-4 group">
-                    <img
-                      src={video.thumbnail}
-                      alt={video.title}
-                      className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
-                    />
+                  <div className="md:flex">
+                    <div className="md:w-[420px] relative">
+                      <img
+                        src={video.thumbnail}
+                        alt={video.title}
+                        className="w-full h-full object-cover"
+                      />
 
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                      <div className="bg-red-600 rounded-xl px-4 py-2 text-white text-3xl shadow-xl">
-                        ▶
+                      <div className="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-sm">
+                        {video.duration}
                       </div>
                     </div>
-                  </div>
 
-                  <h3 className="text-xl font-semibold">
-                    {video.title}
-                  </h3>
-                </div>
+                    <div className="p-6 flex flex-col justify-center">
+                      <p className="text-purple-400 font-medium mb-2">
+                        {video.type}
+                      </p>
+
+                      <h3 className="text-2xl font-bold mb-3">
+                        {video.title}
+                      </h3>
+
+                      <p className="text-zinc-400 leading-relaxed">
+                        {video.details}
+                      </p>
+                    </div>
+                  </div>
+                </a>
               ))}
             </div>
           </section>
@@ -221,9 +259,13 @@ export default function BudiClipPortfolio() {
 
         {/* YouTube Shorts */}
         {(activeCategory === "all" || activeCategory === "shorts") && (
-          <section className={`px-6 pb-24 max-w-6xl mx-auto ${activeCategory === 'all' ? 'border-t border-zinc-900 pt-24' : ''}`}>
+          <section
+            className={`px-6 pb-24 max-w-6xl mx-auto ${
+              activeCategory === "all" ? "border-t border-zinc-900 pt-24" : ""
+            }`}
+          >
             <h2 className="text-2xl font-bold mb-8 text-zinc-400">
-              Featured YouTube Shorts
+              Featured Short-Form Clips
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -249,56 +291,51 @@ export default function BudiClipPortfolio() {
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-semibold">
-                    {video.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold mb-2">{video.title}</h3>
+
+                  <p className="text-zinc-400 text-sm leading-relaxed">
+                    {video.details}
+                  </p>
                 </a>
               ))}
             </div>
           </section>
         )}
 
-        {/* Long Form Projects */}
-        {(activeCategory === "all" || activeCategory === "longform") && (
-          <section className={`px-6 pb-24 max-w-6xl mx-auto ${activeCategory === 'all' ? 'border-t border-zinc-900 pt-24' : ''}`}>
+        {/* TikTok Work */}
+        {(activeCategory === "all" || activeCategory === "tiktok") && (
+          <section
+            className={`px-6 pb-24 max-w-6xl mx-auto ${
+              activeCategory === "all" ? "border-t border-zinc-900 pt-24" : ""
+            }`}
+          >
             <h2 className="text-2xl font-bold mb-8 text-zinc-400">
-              Featured Long Form Projects
+              Featured TikTok / Reels Work
             </h2>
 
-            <div className="space-y-6">
-              {longFormVideos.map((video, index) => (
-                <a
+            <div className="grid md:grid-cols-3 gap-8">
+              {tiktokVideos.map((video, index) => (
+                <div
                   key={index}
-                  href={video.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-purple-500 transition"
+                  onClick={() => setOpenVideo(video.id)}
+                  className="bg-zinc-900 rounded-3xl p-6 border border-zinc-800 hover:border-purple-500 transition cursor-pointer"
                 >
-                  <div className="md:flex">
-                    <div className="md:w-[400px] relative">
-                      <img
-                        src={video.thumbnail}
-                        alt={video.title}
-                        className="w-full h-full object-cover"
-                      />
+                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden mb-4 group">
+                    <img
+                      src={video.thumbnail}
+                      alt={video.title}
+                      className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
+                    />
 
-                      <div className="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-sm">
-                        {video.duration}
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                      <div className="bg-red-600 rounded-xl px-4 py-2 text-white text-3xl shadow-xl">
+                        ▶
                       </div>
                     </div>
-
-                    <div className="p-6 flex flex-col justify-center">
-                      <h3 className="text-2xl font-bold mb-2">
-                        {video.title}
-                      </h3>
-
-                      <p className="text-zinc-400">
-                        Long-form gaming content edited for engagement,
-                        pacing, and viewer retention.
-                      </p>
-                    </div>
                   </div>
-                </a>
+
+                  <h3 className="text-xl font-semibold">{video.title}</h3>
+                </div>
               ))}
             </div>
           </section>
@@ -306,13 +343,86 @@ export default function BudiClipPortfolio() {
 
         {/* Services */}
         <section className="px-6 py-24 border-t border-zinc-900">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8">Services</h2>
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-4">What I Can Help With</h2>
+
+            <p className="text-zinc-400 mb-10 max-w-2xl mx-auto">
+              Editing support for gaming creators who need stronger YouTube
+              videos, better stream highlights, and short-form clips for
+              distribution.
+            </p>
+
             <div className="grid md:grid-cols-3 gap-6 text-zinc-300">
-              <div className="p-6 bg-zinc-900 rounded-2xl">Short-form Editing</div>
-              <div className="p-6 bg-zinc-900 rounded-2xl">Gaming Highlights</div>
-              <div className="p-6 bg-zinc-900 rounded-2xl">TikTok / Reels Optimization</div>
-              <div className="p-6 bg-zinc-900 rounded-2xl">Long-form Editing</div>
+              <div className="p-6 bg-zinc-900 rounded-2xl">
+                Long-form YouTube Videos
+              </div>
+
+              <div className="p-6 bg-zinc-900 rounded-2xl">
+                Stream Highlights
+              </div>
+
+              <div className="p-6 bg-zinc-900 rounded-2xl">
+                Gaming Challenge Edits
+              </div>
+
+              <div className="p-6 bg-zinc-900 rounded-2xl">
+                Shorts / TikToks / Reels
+              </div>
+
+              <div className="p-6 bg-zinc-900 rounded-2xl">
+                Subtitles, Memes & SFX
+              </div>
+
+              <div className="p-6 bg-zinc-900 rounded-2xl">
+                Retention-Focused Pacing
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Process */}
+        <section className="px-6 py-24 border-t border-zinc-900">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-4">Simple Workflow</h2>
+
+            <p className="text-zinc-400 mb-10 max-w-2xl mx-auto">
+              A simple editing process so creators can quickly see the style,
+              review the edit, and move forward without overcomplicating things.
+            </p>
+
+            <div className="grid md:grid-cols-4 gap-6 text-left">
+              <div className="bg-zinc-900 rounded-2xl p-6 border border-zinc-800">
+                <p className="text-purple-400 font-bold mb-2">01</p>
+                <h3 className="font-semibold mb-2">Send Footage</h3>
+                <p className="text-zinc-400 text-sm">
+                  Send raw gameplay, stream footage, or a video link.
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 rounded-2xl p-6 border border-zinc-800">
+                <p className="text-purple-400 font-bold mb-2">02</p>
+                <h3 className="font-semibold mb-2">Editing</h3>
+                <p className="text-zinc-400 text-sm">
+                  I edit the footage with pacing, subtitles, memes, SFX, and
+                  structure.
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 rounded-2xl p-6 border border-zinc-800">
+                <p className="text-purple-400 font-bold mb-2">03</p>
+                <h3 className="font-semibold mb-2">Review</h3>
+                <p className="text-zinc-400 text-sm">
+                  You review the edit and send any notes or revisions.
+                </p>
+              </div>
+
+              <div className="bg-zinc-900 rounded-2xl p-6 border border-zinc-800">
+                <p className="text-purple-400 font-bold mb-2">04</p>
+                <h3 className="font-semibold mb-2">Final Delivery</h3>
+                <p className="text-zinc-400 text-sm">
+                  Final video is delivered clean and ready to upload.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -326,19 +436,19 @@ export default function BudiClipPortfolio() {
 
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div className="bg-zinc-900 rounded-2xl p-6">
-                ⚡ Fast turnaround (&lt;12h)
+                🎮 Gaming-focused editing style
               </div>
 
               <div className="bg-zinc-900 rounded-2xl p-6">
-                🎮 Gaming-focused editing
+                📺 Long-form and short-form experience
               </div>
 
               <div className="bg-zinc-900 rounded-2xl p-6">
-                📱 Optimized for Shorts, TikTok, and Reels
+                ✂️ Strong pacing, subtitles, memes, and SFX
               </div>
 
               <div className="bg-zinc-900 rounded-2xl p-6">
-                📈 Strong pacing and retention-focused cuts
+                📈 Edited with retention and viewer engagement in mind
               </div>
             </div>
           </div>
@@ -349,15 +459,28 @@ export default function BudiClipPortfolio() {
           id="contact"
           className="px-6 py-24 border-t border-zinc-900 text-center"
         >
+          <h2 className="text-4xl font-bold mb-6">Let’s Work Together</h2>
+
           <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-            Need a gaming editor for TikTok, Reels, or Shorts?
-            <br /><br />
-            Let's work together.
+            Need a gaming editor for your YouTube videos, stream highlights, or
+            short-form clips?
             <br />
-            Fast delivery. Clean subtitles. High-retention pacing.
+            <br />
+            Send me your footage or channel link, and I can help turn it into
+            stronger content.
+            <br />
+            Long-form editing. Clean subtitles. Strong pacing.
+            Retention-focused cuts.
           </p>
 
           <div className="flex justify-center gap-4 flex-wrap">
+            <a
+              href={`mailto:${contactEmail}`}
+              className="px-5 py-3 bg-purple-500 text-white rounded-xl hover:bg-purple-600 transition"
+            >
+              Email Me
+            </a>
+
             <a
               href="https://www.tiktok.com/@budiclip"
               target="_blank"
