@@ -89,6 +89,15 @@ export default function BudiClipPortfolio() {
       details:
         "Structured gameplay footage into a cleaner and more engaging YouTube video.",
     },
+    {
+      title: "Meme Style Sample Edit (unofficial)",
+      thumbnail: "https://img.youtube.com/vi/2e0BGYoR92A/maxresdefault.jpg",
+      url: "https://www.youtube.com/watch?v=2e0BGYoR92A",
+      duration: "0:30",
+      type: "Long-form YouTube video",
+      details:
+        "Meme Video",
+    },
   ];
 
   const categories = [
