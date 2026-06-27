@@ -72,7 +72,7 @@ export default function BudiClipPortfolio() {
 
   const longFormVideos = [
     {
-      title: "Meme Style Sample Edit (unofficial)",
+      title: "Unofficial Sample Edit Roblox",
       thumbnail: "https://img.youtube.com/vi/gYRpcBNFUAc/maxresdefault.jpg",
       url: "https://youtu.be/gYRpcBNFUAc",
       duration: "11:07",
@@ -81,7 +81,7 @@ export default function BudiClipPortfolio() {
         "Roblox Video edited for pacing, storytelling, subtittles, memes, SFX, and retention.",
     },
     {
-      title: "Unofficial Sample Edit Roblox",
+      title: "Meme Style Sample Edit (unofficial)",
       thumbnail: "https://img.youtube.com/vi/2e0BGYoR92A/maxresdefault.jpg",
       url: "https://www.youtube.com/watch?v=2e0BGYoR92A",
       duration: "0:30",
