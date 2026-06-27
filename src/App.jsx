@@ -72,6 +72,15 @@ export default function BudiClipPortfolio() {
 
   const longFormVideos = [
     {
+      title: "Meme Style Sample Edit (unofficial)",
+      thumbnail: "https://img.youtube.com/vi/2e0BGYoR92A/maxresdefault.jpg",
+      url: "https://www.youtube.com/watch?v=2e0BGYoR92A",
+      duration: "0:30",
+      type: "Long-form YouTube video",
+      details:
+        "Meme Video",
+    },
+    {
       title: "Roblox Long-Form Gaming Video",
       thumbnail: "https://img.youtube.com/vi/sthTQBiU8gc/maxresdefault.jpg",
       url: "https://youtu.be/sthTQBiU8gc",
@@ -88,15 +97,6 @@ export default function BudiClipPortfolio() {
       type: "Long-form YouTube video",
       details:
         "Structured gameplay footage into a cleaner and more engaging YouTube video.",
-    },
-    {
-      title: "Meme Style Sample Edit (unofficial)",
-      thumbnail: "https://img.youtube.com/vi/2e0BGYoR92A/maxresdefault.jpg",
-      url: "https://www.youtube.com/watch?v=2e0BGYoR92A",
-      duration: "0:30",
-      type: "Long-form YouTube video",
-      details:
-        "Meme Video",
     },
   ];
 
